@@ -1,22 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using MyWebApi.CustomActionFilters;
-using MyWebApi.Data;
 using MyWebApi.Models.Domain;
 using MyWebApi.Models.DTO;
 using MyWebApi.Repositories;
 
 namespace MyWebApi.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Route("api/[Controller]")]
+    [Route("api/[Controller]")]
     [ApiController]
     public class RegionsController : ControllerBase
     {
